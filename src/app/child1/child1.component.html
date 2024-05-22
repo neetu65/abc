@@ -1,0 +1,12 @@
+
+
+<p>child1 works!</p>
+{{datafromparent}}
+<ng-content select="[chanelName]"></ng-content>
+<ng-content select="[channelPath]"></ng-content>
+
+<div *ngFor="let num of numbers">
+  <ng-container *ngIf="num%2 ===0"> {{num}} </ng-container>
+</div>
+
+

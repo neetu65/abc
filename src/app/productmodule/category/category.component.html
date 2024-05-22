@@ -1,0 +1,23 @@
+
+<header></header>
+
+<h1>Category</h1>
+
+<a routerLink="products">Products</a>
+
+<div class="container">
+    <div class="row">
+        <div class="col-3 shadow" *ngFor="let cat of catResponse.CategoryListDetail">
+             <a routerLink="Products/{{cat.CategoryId}}">
+                <img src={{cat.CategoryImage}} class="img-fluid mx-auto d-block"/> <br/>
+             </a>
+             <h2>{{cat.CategoryName}}</h2>
+             <h3>{{cat.CategoryDesc}}</h3>
+             <p>{{cat.CategoryId}}</p>
+              
+        </div>
+    </div>
+</div>
+
+<footer></footer>
+ 

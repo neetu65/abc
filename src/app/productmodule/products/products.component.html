@@ -1,0 +1,24 @@
+
+
+<header></header>
+
+<h1>Products</h1>
+
+<a routerLink="./../productbyid">Product by id</a>
+
+<div class="container">
+    <div class="row">
+        <div class="col-3 shadow" *ngFor="let product of producstHolder.ProductListDetail">
+             
+             <img src={{product.ProductImage}} class="img-fluid mx-auto d-block"/> <br/>
+             <h2>{{product.ProductName}}</h2>
+             <p [innerHTML]="product.ProductDesc"></p>
+             <p>{{product.ProductId}}</p>
+              
+        </div>
+    </div>
+</div>
+
+
+
+<footer></footer>
